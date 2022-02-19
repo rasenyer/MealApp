@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MealApp</string>
+    <string name="home">Home</string>
+    <string name="detail">Detail</string>
+    <string name="category">Category:\u0020</string>
+    <string name="area">Area:\u0020</string>
+    <string name="watch_tutorial_video">Watch tutorial video</string>
+    <string name="seafood">Seafood</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="dessert">Dessert</string>
+</resources>

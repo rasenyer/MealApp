@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.rasenyer.mealapp.ui.fragments.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.rasenyer.mealapp.ui.fragments.detail.DetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_detail">
+
+        <argument
+            android:name="category"
+            app:argType="com.rasenyer.mealapp.data.remote.models.Category"
+            app:nullable="true"/>
+
+    </fragment>
+
+</navigation>
